@@ -1,2 +1,2 @@
-# greensoupdeveloper.github.io
-website
+# greensoupdev.com
+hi, this is my page :)

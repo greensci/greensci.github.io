@@ -1,0 +1,240 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(0, 0, 0);
+
+  background: linear-gradient(90deg,
+      rgb(4, 26, 0) 1%,
+      rgb(65, 142, 46) 28%,
+      rgb(99, 134, 0) 100%,
+      rgba(47, 74, 29, 1) 100%,
+      rgb(25, 92, 45) 100%,
+      rgb(24, 61, 0) 100%,
+      rgba(0, 0, 0, 1) 1%);
+  /*crihmah
+    background: linear-gradient(
+    90deg,
+    rgb(26, 4, 0) 1%,
+    rgb(142, 65, 46) 28%,
+    rgb(134, 99, 0) 100%,
+    rgba(74, 47, 29, 1) 100%,
+    rgb(92, 25, 45) 100%,
+    rgb(61, 24, 0) 100%,
+    rgba(0, 0, 0, 1) 1%
+  );*/
+  background-size: 100000% 400%;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  text-align: center;
+  animation: gradient 15s ease infinite;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
+.img1 {
+  width: 320px;
+  height: 240px;
+}
+
+.greenyImg {
+  width: 180px;
+  height: 180px;
+  transition: all .3s ease-in-out;
+}
+
+.greenyImg:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.greenlink {
+  width: 110px;
+  height: 110px;
+  transition: all .3s ease-in-out;
+}
+
+.greenlink:hover {
+  transition: all .3s ease-in-out;
+  transform: scale(1.2);
+}
+
+.copyright {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1030;
+  text-align: center;
+}
+
+table {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.copyright {
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 50000px) {
+  .hello {
+    font-size: 80px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+    opacity: 100%;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    width: 800px;
+
+  }
+
+  .christ {
+    font-size: 70px;
+  }
+
+  .prtext {
+    font-size: 45px;
+  }
+
+  .helloAbout {
+    font-size: 85px;
+  }
+
+  .gifT {
+    opacity: 30%;
+    visibility: visible;
+  }
+
+  .gifAbouts {
+    visibility: visible;
+  }
+
+  /*desktop version*/
+}
+
+.topnav a {
+  overflow: hidden;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  opacity: 80%;
+}
+
+@media only screen and (max-width: 580px) {
+  .hello {
+    font-size: 25px;
+  }
+
+  .christ {
+    font-size: 30px;
+  }
+
+  .helloAbout {
+    font-size: 25px;
+  }
+
+  .gifT {
+    opacity: 30%;
+    visibility: hidden;
+  }
+
+  .gifAbouts {
+    visibility: hidden;
+  }
+
+  /*mobile version*/
+}
+
+p1 {
+  font-size: 5px;
+}
+
+a {
+  font-size: 15px;
+  color: white;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+
+/*confetti*/
+
+.confetti-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* Prevent interaction */
+  overflow: hidden;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+.confetti-piece {
+  position: absolute;
+  width: 10px;
+  height: 20px;
+  background: var(--confetti-color, red);
+  opacity: 0.9;
+  animation: confetti-fall var(--fall-duration, 4s) linear infinite;
+}
+
+.confetti-piece:nth-child(1) {
+  left: 10%;
+  --confetti-color: #ff6347;
+  --fall-duration: 3s;
+}
+
+.confetti-piece:nth-child(2) {
+  left: 25%;
+  --confetti-color: #ffa500;
+  --fall-duration: 5s;
+}
+
+.confetti-piece:nth-child(3) {
+  left: 40%;
+  --confetti-color: #32cd32;
+  --fall-duration: 4.5s;
+}
+
+.confetti-piece:nth-child(4) {
+  left: 60%;
+  --confetti-color: #1e90ff;
+  --fall-duration: 3.5s;
+}
+
+.confetti-piece:nth-child(5) {
+  left: 80%;
+  --confetti-color: #ff69b4;
+  --fall-duration: 6s;
+}

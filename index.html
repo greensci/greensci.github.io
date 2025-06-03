@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <meta property="og:title" content="GreenSoupDev's Webpage">
+    <meta property="og:description" content="GreenSoupDev's official webpage.">
+    <meta property="og:url" content="https://greensoupdeveloper.github.io/GreenSoupDev-Webpage/">
+    <meta property="og:image" content="images/greeny.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="GreenSoupDev's Webpage">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>GreenSoupDev's Page</title>
+</head>
+
+<body>
+    <div class="confetti-wrapper">
+        <!-- Confetti elements will be created using CSS -->
+    </div>
+    <br>
+    <br>
+    <br>
+    <center>
+        <br>
+        <br>
+        <input class="hello" type="text" name="" id="secretPasswordInput" placeholder="hiiiii">
+        <br><br>
+        <table>
+            <tr>
+                <td>
+                <td>
+
+                    <img src="images/greeny.png" class="greenyImg" onclick="checkifitsgood();"></img>
+
+                </td>
+                <td>
+                    <p>Hi there. Im GreenSoupDev and i'm a amateur programmer, programmer and programmer. I'd like to
+                        draw tho.</p>
+                    <p id="randomLettering">ahshdajsdkahsduaid :)</p>
+                    <script>
+                        document.getElementById('secretPasswordInput').value = "hiiiii";
+                        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+                        let result = "";
+                        for (let i = 0; i < 12; i++) {
+                            result += chars.charAt(Math.floor(Math.random() * chars.length));
+                        }
+                        document.getElementById("randomLettering").innerHTML = "<i>" + result + "</i> :)";
+
+                        function checkifitsgood() {
+                            var input = document.getElementById('secretPasswordInput').value;
+                            if (input == "") {
+                                console.log("empty");
+                                window.location.reload();
+                                
+                            }
+                            else if (input != result) {
+                                console.log("no");
+                                document.getElementById("randomLettering").innerHTML = "wrong password. try again.";
+                            } else {
+                                console.log("yes");
+                                document.getElementById("randomLettering").innerHTML = "yay :)";
+                                document.getElementById('secretPasswordInput').value = "yay you did it!";
+                                congrats();
+                            }
+                        }
+                        function congrats() {
+                            const confettiWrapper = document.querySelector('.confetti-wrapper');
+                            // Generate confetti
+                            for (let i = 0; i < 60; i++) {
+                                const confetti = document.createElement('div');
+                                confetti.classList.add('confetti-piece');
+                                confetti.style.left = `${Math.random() * 100}%`;
+                                confetti.style.setProperty('--fall-duration', `${Math.random() * 3 + 3}s`);
+                                confetti.style.setProperty('--confetti-color', getRandomColor());
+                                confettiWrapper.appendChild(confetti);
+                            }
+                            function getRandomColor() {
+                                const colors = ['#ff6347', '#ffa500', '#32cd32', '#1e90ff', '#ff69b4'];
+                                return colors[Math.floor(Math.random() * colors.length)];
+                            }
+                        }
+                    </script>
+                </td>
+                </td>
+            </tr>
+        </table>
+
+
+        <div class="topnav">
+            <a class="fa fa-twitter" href="https://twitter.com/GreenSoupDev" style="font-size: 24px"></a>
+            <a class="fa fa-github" href="https://github.com/GreenSoupDeveloper" style="font-size: 24px"></a>
+            <a class="fa fa-youtube-play" href="https://www.youtube.com/channel/UCWAPG-bBOt8VwJYZCBHg1KA"
+                style="font-size: 24px"></a>
+        </div>
+    </center>
+
+    <footer class="copyright">
+        <div class="copytext">
+            <br>
+            © 2025 Copyright:
+            <a class="text-white">
+                <strong>GreenSoupDev.</strong>
+            </a>
+            Made for greensoupdev.com
+            <br>
+            <br>
+        </div>
+    </footer>
+</body>
+
+</html>
