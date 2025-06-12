@@ -32,7 +32,7 @@ var button = document.createElement('button');
 
 // Create the anchor/link element
 var link = document.createElement('a');
-link.href = 'randomPage1.html';
+link.href = 'randompage1.html';
 link.textContent = 'Click Here!';
 
 // Append the link to the button
