@@ -4,27 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>precious code database</title>
 </head>
 
 <body>
     <center>
-       
-        <button onclick="document.getElementById('rick').play(); document.getElementById('rickvid').play(); document.getElementById('ha').style.display = 'block';">get thinger</button>
-        <div id="ha"> <audio id="rick"src="audio1.mp3" loop></audio>
-
-            <video id="rickvid"width="600" muted loop>
-                <source src="
-                rick.mp4" type="video/mp4">
+        <h1><i>precious code database</i></h1>
+        <p>secret confidential code</p>
+        <input id="usertx" type="text" placeholder="username">
+        <br><br>
+        <input id="passtx" type="password" placeholder="password">
+        <br><br>
+        <button onclick="playhaha();">Access Database</button>
+        <br>
+        <p id="error" style="color: red;"></p>
+        <div id="ha">
+            <audio id="rick" src="audio1.mp3" loop></audio>
+            <video id="rickvid" width="600" muted loop>
+                <source src="rick.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-            </video></div>
+            </video>
+        </div>
     </center>
+
     <script>
+        document.getElementById('error').innerHTML = "";
         document.getElementById('ha').style.display = "none";
-      
-  
 
+        function playhaha() {
+            var usertx = document.getElementById('usertx').value.trim();
+            var passtx = document.getElementById('passtx').value.trim();
 
+            if (usertx !== "greensci" || passtx !== "1236sgsad") {
+                document.getElementById('error').innerHTML = "wrong username or password. please try 'greensci' with '1236sgsad' as password.";
+                document.getElementById('rickvid').pause(); // Pauses the video
+                document.getElementById('rickvid').currentTime = 0; // Resets to start
+
+                document.getElementById('rick').pause(); // Pauses the audio
+                document.getElementById('rick').currentTime = 0; // Resets audio
+                document.getElementById('ha').style.display = "none";
+            } else {
+                document.getElementById('rick').play();
+                document.getElementById('rickvid').play();
+                document.getElementById('ha').style.display = 'block';
+                document.getElementById('error').innerHTML = "";
+            }
+        }
     </script>
 </body>
 
