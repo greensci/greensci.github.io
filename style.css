@@ -10,20 +10,6 @@
     --footer: rgba(0, 0, 0, 0.05);
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --primary: #4de452;
-      --secondary: #2ba531;
-      --accent: #8BC34A;
-      --dark: #248e2b;
-      --light: #4c4c4c;
-      --bgcard: #434343;
-      --text: #fff;
-      --bg: #252525;
-      --footer: rgba(255, 255, 255, 0.05);
-
-    }
-  }
 
   button {
     width: 100%;
@@ -46,7 +32,7 @@
     width: 100%;
     max-width: 300px;
     padding: 12px 16px;
-   border-radius: 10px;
+    border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     font-size: 31px;
     font-weight: 600;
@@ -59,7 +45,7 @@
     color: var(--primary);
   }
 
- 
+
 
   * {
     margin: 0;
@@ -70,14 +56,56 @@
 
   body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--bg);
+   
+
+
     color: var(--text);
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.05) 1px, transparent 0);
-    background-size: 20px 20px;
+background: linear-gradient(90deg,
+    rgb(235, 245, 230) 1%,       /* Soft white-green */
+    rgb(200, 230, 190) 28%,      /* Light mint */
+    rgb(210, 230, 180) 100%,     /* Pale lime */
+    rgb(195, 220, 190) 100%,     /* Dewy green */
+    rgb(185, 225, 195) 100%,     /* Cool pastel green */
+    rgb(190, 215, 185) 100%,     /* Muted sage */
+    rgb(225, 235, 220) 1%        /* Near-white green */
+);
+
+
+    background-size: 100000% 400%;
+    animation: gradient 15s ease infinite;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --primary: #4de452;
+      --secondary: #2ba531;
+      --accent: #8BC34A;
+      --dark: #248e2b;
+      --light: #445144;
+      --bgcard: #2b3e2c;
+      --text: #fff;
+      --bg: #252525;
+      --footer: rgba(255, 255, 255, 0.05);
+
+    }
+
+    body {
+
+      background: linear-gradient(90deg,
+          rgb(4, 26, 0) 1%,
+          rgb(65, 142, 46) 28%,
+          rgb(99, 134, 0) 100%,
+          rgba(47, 74, 29, 1) 100%,
+          rgb(25, 92, 45) 100%,
+          rgb(24, 61, 0) 100%,
+          rgba(0, 0, 0, 1) 1%);
+      background-size: 100000% 400%;
+      animation: gradient 15s ease infinite;
+    }
   }
 
   .container {
