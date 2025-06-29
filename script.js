@@ -3,19 +3,26 @@ let result = "";
 for (let i = 0; i < 12; i++) {
     result += chars.charAt(Math.floor(Math.random() * chars.length));
 }
-document.getElementById("randomLettering").innerHTML = `<span style="letter-spacing: 2px;">${result}</span> <span style="color: var(--accent);">:)</span>`;
+//document.getElementById("randomLettering").innerHTML = `<span style="letter-spacing: 2px;">${result}</span> <span style="color: var(--accent);">:)</span>`;
 document.getElementById('secretPasswordInput').value = "greensci";
+
+function revealCode() {
+    document.getElementById("greenscitexty").innerHTML = "<strong>" + result + " </strong>";
+}
 
 function checkifitsgood() {
     var input = document.getElementById('secretPasswordInput').value.trim();
     if (input === "") {
-        document.getElementById("randomLettering").innerHTML = "try entering the code above!";
+        document.getElementById("randomLettering").innerHTML = "the code is on this same page! try to discover it.";
         document.getElementById("randomLettering").style.color = "var(--secondary)";
     }
     else if (input !== result) {
 
+        if (input != "greensci") {
+            document.getElementById("randomLettering").innerHTML = "the code is on this same page! try to discover it.";
+            // Shake animation
 
-        // Shake animation
+        }
         document.getElementById('secretPasswordInput').classList.add('shake');
         setTimeout(() => {
             document.getElementById('secretPasswordInput').classList.remove('shake');
@@ -26,20 +33,20 @@ function checkifitsgood() {
         document.getElementById('secretPasswordInput').value = "Access granted!";
         document.getElementById('secretPasswordInput').style.borderColor = "var(--primary)";
 
-      
-       // Create the button element
-var button = document.createElement('button');
 
-// Create the anchor/link element
-var link = document.createElement('a');
-link.href = 'randompage1.html';
-link.textContent = 'Click Here!';
+        // Create the button element
+        var button = document.createElement('button');
 
-// Append the link to the button
-button.appendChild(link);
+        // Create the anchor/link element
+        var link = document.createElement('a');
+        link.href = 'randompage1.html';
+        link.textContent = 'Click Here!';
 
-// Append the button to your carrd element
-document.getElementById('carrd').appendChild(button);
+        // Append the link to the button
+        button.appendChild(link);
+
+        // Append the button to your carrd element
+        document.getElementById('carrd').appendChild(button);
         congrats();
     }
 }
