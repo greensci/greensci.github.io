@@ -4,9 +4,13 @@ body {
     color: #ffffff;
     font-family: 'Courier New', monospace;
     margin: 0;
-    padding: 20px;
+   
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAEklEQVQImWNgYGD4z4AE/gMADQcBfR2f0AAAAABJRU5ErkJggg==');
     /* Subtle pattern */
+}
+p{
+    color: #000000;
+    text-shadow: 1px 1px 0px #ffffff;
 }
 
 .container {
@@ -18,6 +22,7 @@ body {
     padding: 20px;
     box-shadow: 5px 5px 0px #000000;
 }
+
 
 .profile-card {
     text-align: center;
@@ -105,5 +110,5 @@ marquee {
     color: #ffff00;
     background-color: #000080;
     padding: 5px;
-    margin: 10px 0;
+   
 }
