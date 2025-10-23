@@ -8,63 +8,49 @@
     <meta property="og:description" content="greensci's official webpage.">
     <meta property="og:url" content="https://greensci.github.io/">
     <meta property="og:image" content="images/greeny.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="400">
-    <meta property="og:image:height" content="300">
-    <meta property="og:image:alt" content="greensci's Webpage">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
     <title>greensci's Page</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <!-- Binary rain background -->
-    <div class="binary-rain" id="binaryRain"></div>
-
-    <div class="confetti-wrapper"></div>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
     <div class="container">
-        <div class="profile-card floating" id="carrd">
-            <img src="images/art.png" class="greenyImg" onclick="checkifitsgood()" alt="greensci's profile picture">
-            <br>
+        <h1>Welcome to greensci's Homepage!</h1>
 
-            <input class="hello" type="text" id="secretPasswordInput" placeholder="greensci">
-            <p>hihihiiiii <br>im greensci (also known as greensoupdev) and im a amateur programmer. <br><br>i also like to
-                draw things.</p>
+        <marquee behavior="scroll" direction="left">
+            <span class="blink">***</span> Under Construction <span class="blink">***</span>
+        </marquee>
 
+        <div class="profile-card">
+            <img src="images/art.png" class="greenyImg" alt="greensci's profile picture">
+            <br><br>
+
+            <input class="hello" type="text" id="secretPasswordInput" placeholder="Enter password...">
+
+            <p>Hi! I'm greensci (also known as greensoupdev).</p>
+            <p>I'm an amateur programmer who likes to draw things.</p>
+            <p>Last updated:
+                <script>document.write(new Date().toLocaleDateString());</script>
+            </p>
+
+            <hr>
+
+            <div class="social-links">
+                <a href="https://x.com/greensci_">Twitter</a> |
+                <a href="https://github.com/greensci">GitHub</a> |
+                <a href="https://steamcommunity.com/id/greensci/">Steam</a> |
+                <a href="https://www.reddit.com/user/GreenSoupDev/">Reddit</a> |
+                <a href="https://www.youtube.com/channel/UCWAPG-bBOt8VwJYZCBHg1KA">YouTube</a>
+            </div>
         </div>
-        <p id="randomLettering">> SYSTEM_READY [OK]</p>
-        <div class="social-links">
-            <a href="https://x.com/greensci_" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://github.com/greensci" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://steamcommunity.com/id/greensci/" aria-label="Steam"><i class="fab fa-steam"></i></a>
-            <a href="https://www.reddit.com/user/GreenSoupDev/" aria-label="Reddit"><i class="fab fa-reddit"></i></a>
-            <a href="https://www.youtube.com/channel/UCWAPG-bBOt8VwJYZCBHg1KA" aria-label="YouTube"><i
-                    class="fab fa-youtube"></i></a>
-        </div>
+
         <div class="copyright">
-        © 2025 Copyright <a class="greenscitext" onmouseover="revealCode();" id="greenscitexty">
-            <strong>greensci</strong>
-        </a>|||
-        > Made with ♥ for greensci.github.io
-    </div>
+            © 2025 Copyright <a class="greenscitext" href="#"><strong>greensci</strong></a> |||
+            > Made with ♥ for greensci.github.io
+        </div>
 
     </div>
-
-    
-    <script src="script.js"></script>
-
 </body>
 
 </html>
