@@ -3,14 +3,13 @@ const messages = [
     "i like the xbox 360",
     "i like to play piano",
     "im using a keyboard from 2010",
-    "my display is 1680x1050",
+    "my display was 1680x1050",
     "i have a windows 7 install disc",
-    "my xbox 360 is the fat one",
+    "my xbox 360 is the fat white one",
     "i dont like programming websites",
     "my gpu is a gtx 1070",
     "i like to make games",
-    "i want a 3ds",
-    "i need a new display",
+    "i want a 3ds (UPDATE: i got a white 2ds)",
     "i love music omg",
     "i like soup",
     "i would love to change my cpu since its a r3 3200g",
@@ -24,8 +23,8 @@ const messages = [
     "ahhghghghghghghghghg",
     "español es mi lenguaje nativo xd",
     "i find breakcore corny",
-    "i dont like roblox at all, boring.",
-    "viva españa"
+    "i dont like roblox at all, boring",
+    "i have a midi keyboard from 2007"
 ];
 
 const randomLettering = document.getElementById('randomLettering');
