@@ -24,6 +24,7 @@ const messages = [
     "español es mi lenguaje nativo xd",
     "i find breakcore corny",
     "i dont like roblox at all, boring",
+    "jules what's up ?",
     "i have a midi keyboard from 2007"
 ];
 
