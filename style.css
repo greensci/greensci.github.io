@@ -15,23 +15,8 @@ body {
     min-height: 100vh;
 }
 
-.marquee-bar {
-    background-color: #111;
-    border-top: 1px solid #2a2a2a;
-    border-bottom: 1px solid #2a2a2a;
-    color: #888;
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    padding: 4px 0;
-}
 
-.bottom-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-}
+
 
 .container {
     max-width: 640px;
