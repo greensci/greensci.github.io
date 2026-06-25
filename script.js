@@ -60,8 +60,6 @@ const pages = {
     blog: 'blog.html',
     musicilike: 'musicilike.html',
 };
-
-frame.src = 'main.html';
 buttons.forEach(btn => {
     btn.addEventListener('click', () => {
         buttons.forEach(b => b.classList.remove('is-active'));
