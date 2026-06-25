@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
@@ -11,55 +12,57 @@
     <title>:: greensci's Page ::</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+</style>
+
 <body>
 
-   
+    <div class="page">
 
-    <div class="container">
+        <div class="desk">
 
-        <h1 class="site-title">::&nbsp;greensci's page&nbsp;::</h1>
-        <p class="site-subtitle">[ amateur programmer & drawist of cool things i think ]</p>
+            <div class="main-col">
+                <div class="titlebar">
 
-        <div class="divider">- - - - - - - - - - - - - - - - - - - -</div>
+                    <span class="titlebar-text">cool cool sexy page</span>
+                </div>
 
-        <div class="profile-card">
+                <div class="window" id="panel-home">
+                    <h1 class="site-title">::&nbsp;greensci's page&nbsp;::</h1>
+                    <p class="site-subtitle">amateur programmer &amp; drawist of cool things i think</p>
+                    <div class="ticker">
+                        <p id="randomLettering"></p>
+                    </div>
+                    
+                    <iframe id="contentFrame" class="content-frame" src="main.html" title="content" frameborder="no" noresize border="0" frameborder="0" framespacing="0"></iframe>
 
-            <div class="profile-img-wrap">
-                <img src="https://avatars.githubusercontent.com/u/109924369?v=4" class="greenyImg" alt="greeny pic">
+                    <div class="statusbar">
+                        <span>&copy; 2026 <strong>greensci</strong></span>
+                    </div>
+                </div>
             </div>
 
-            <div class="profile-info">
-                <p><span class="label">name:</span> greensci (known as greensoupdev before)</p>
-                <p><span class="label">about:</span> im an amateur programmer who also likes to draw things that look cool probablyu</p>
-                <br>
-                <p id="randomLettering" class="pipi"></p>
-                <br>
-                <p><span class="label">last updated:</span> 19/06/2026</p>
+            <div class="side-col">
+                <div class="titlebar titlebar-small">
+                    <span class="titlebar-text">menu thing</span>
+                </div>
+                <div class="window side-window">
+                    <div class="section-title small-title">select a thing</div>
+                    <ul class="select-list" id="selectList">
+                        <li><button class="select-btn is-active" data-panel="home">[ home ]</button></li>
+                        <li><button class="select-btn" data-panel="blog">[ blog ]</button></li>
+                        <li><button class="select-btn" data-panel="musicilike">[ music i like ]</button></li>
+                    </ul>
+                </div>
             </div>
 
         </div>
 
-        <script src="script.js"></script>
-
-        <div class="divider">- - - - - - - - - - - - - - - - - - - -</div>
-
-        <div class="section-title">[ find me elsewhere, in The Wired ]</div>
-        <div class="social-links">
-            <a href="https://x.com/greensci_">✦ Twitter</a>
-            <a href="https://github.com/greensci">✦ GitHub</a>
-            <a href="https://steamcommunity.com/id/greensci/">✦ Steam</a>
-            <a href="https://www.reddit.com/user/GreenSoupDev/">✦ Reddit</a>
-            <a href="https://www.youtube.com/channel/UCWAPG-bBOt8VwJYZCBHg1KA">✦ YouTube</a>
-        </div>
-
-        <div class="divider">- - - - - - - - - - - - - - - - - - - -</div>
-
-        <div class="copyright">
-            &copy; 2026 <a class="greenscitext" href=""><strong>greensci</strong></a> &nbsp;|&nbsp; made with ♥ i think
-        </div>
+        <p class="footnote">made with &hearts; i think</p>
 
     </div>
-   
 
+    <script src="script.js"></script>
 </body>
+
 </html>

@@ -40,3 +40,33 @@ previousMessage = newIndex;
 
 randomLettering.innerHTML = messages[newIndex];
 
+
+
+
+
+
+
+
+
+
+// side menu select buttonerssss
+const buttons = document.querySelectorAll('.select-btn');
+const sideNote = document.getElementById('sideNote');
+
+const frame = document.getElementById('contentFrame');
+
+const pages = {
+    home: 'main.html',
+    blog: 'blog.html',
+    musicilike: 'musicilike.html',
+};
+
+frame.src = 'main.html';
+buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        const panel = btn.dataset.panel;
+        if (frame && pages[panel]) frame.src = pages[panel];
+    });
+});
